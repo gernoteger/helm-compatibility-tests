@@ -4,8 +4,10 @@ SHELL=bash
 test:
 	set -e
 	helm version
+	echo "->helm lint"
 	helm lint foo
-	helm dependency build foo # --skip-refresh after helm 3.4
+	echo "->helm dependency build"
+	helm dependency build foo # --skip-refresh works only after helm 3.4
 
 install-helm-3.3.4:
 	./get_helm.sh --version v3.3.4 # lint: last ok
