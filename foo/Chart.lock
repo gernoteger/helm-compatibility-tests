@@ -1,6 +1,0 @@
-dependencies:
-- name: bar
-  repository: ""
-  version: '*'
-digest: sha256:a86e35c2b66cb6574c965de947e6f30169502562cc5d675084c82b633f2a56a4
-generated: "2023-02-28T08:53:09.638088878+01:00"
