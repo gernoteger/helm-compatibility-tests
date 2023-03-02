@@ -25,4 +25,6 @@ appVersion: "1.16.0"
 
 dependencies:
   - name: bar
-    version: "*"
+    # version: "*" # FAIL
+    version: "*-0" # OK: "Any Version" with "any Prerelease tag or no prerelease tag"
+    # version: "0.1.0-SNAPSHOT" # OK: literal prerelease tag

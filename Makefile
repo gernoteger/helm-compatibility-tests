@@ -6,8 +6,9 @@ test:
 	helm version
 	echo "->helm lint"
 	helm lint foo
-	echo "->helm dependency build"
-	helm dependency build foo # --skip-refresh works only after helm 3.4
+	echo "->helm dependency update"
+	helm dependency update foo # --skip-refresh works only after helm 3.4
+	helm dependency update --skip-refresh  foo # --skip-refresh works only after helm 3.4
 
 install-helm-3.3.4:
 	./get_helm.sh --version v3.3.4 # lint: last ok
